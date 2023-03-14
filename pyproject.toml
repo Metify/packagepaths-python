@@ -55,12 +55,6 @@ name = "packagepaths"
 readme = "README.md"
 requires-python = ">=3.9"
 
-[project.entry-points."packagepaths.platforms"]
-linux_environment = "packagepaths.core.platforms.linux.standard:LinuxPlatformEnvironmentConvention"
-linux_optional = "packagepaths.core.platforms.linux.optional:LinuxPlatformOptionalConvention"
-linux_standard = "packagepaths.core.platforms.linux.standard:LinuxPlatformStandardConvention"
-linux_user = "packagepaths.core.platforms.linux.standard:LinuxPlatformUserConvention"
-
 [project.optional-dependencies]
 dev = [
     "bandit[toml]>=1.7",
@@ -106,8 +100,8 @@ line_length = 120
 profile = "black"
 
 [tool.mypy]
+explicit_package_bases = true
 mypy_path = "src"
-namespace_pacakges = true
 
 [tool.pytest.ini_options]
 addopts = "--doctest-modules --cov"
