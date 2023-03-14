@@ -103,6 +103,9 @@ profile = "black"
 explicit_package_bases = true
 mypy_path = "src"
 
+[tool.setuptools_scm]
+version_scheme = "python-simplified-semver"
+
 [tool.pytest.ini_options]
 addopts = "--doctest-modules --cov"
 testpaths = [
