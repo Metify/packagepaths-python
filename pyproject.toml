@@ -11,8 +11,8 @@ requires = [
 
 [project]
 authors = [
-    { email = "metify@metify.io", name = "Metify Development Team" },
-    { email = "spencersr@gmail.com", name = "Spencer R. Spencer" },
+    {email = "metify@metify.io", name = "Metify Development Team"},
+    {email = "spencersr@gmail.com", name = "Spencer R. Spencer"},
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -50,7 +50,7 @@ keywords = [
     "platform",
     "user",
 ]
-license = { file = "LICENSE" }
+license = {file = "LICENSE"}
 name = "packagepaths"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -103,9 +103,6 @@ profile = "black"
 explicit_package_bases = true
 mypy_path = "src"
 
-[tool.setuptools_scm]
-version_scheme = "python-simplified-semver"
-
 [tool.pytest.ini_options]
 addopts = "--doctest-modules --cov"
 testpaths = [
@@ -117,6 +114,10 @@ testpaths = [
 where = [
     "src",
 ]
+
+[tool.setuptools_scm]
+version_scheme = "python-simplified-semver"
+scm.local_scheme = "no-local-version"
 
 [tool.tox]
 legacy_tox_ini = """
