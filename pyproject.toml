@@ -11,8 +11,8 @@ requires = [
 
 [project]
 authors = [
-    {email = "metify@metify.io", name = "Metify Development Team"},
-    {email = "spencersr@gmail.com", name = "Spencer R. Spencer"},
+    { email = "metify@metify.io", name = "Metify Development Team" },
+    { email = "spencersr@gmail.com", name = "Spencer R. Spencer" },
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -50,7 +50,7 @@ keywords = [
     "platform",
     "user",
 ]
-license = {file = "LICENSE"}
+license = { file = "LICENSE" }
 name = "packagepaths"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -116,8 +116,8 @@ where = [
 ]
 
 [tool.setuptools_scm]
+local_scheme = "no-local-version"
 version_scheme = "python-simplified-semver"
-scm.local_scheme = "no-local-version"
 
 [tool.tox]
 legacy_tox_ini = """
